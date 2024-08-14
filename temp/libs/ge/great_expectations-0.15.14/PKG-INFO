@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: great_expectations
+Version: 0.15.14
+Summary: Always know what to expect from your data.
+Home-page: https://github.com/great-expectations/great_expectations
+Author: The Great Expectations Team
+Author-email: team@greatexpectations.io
+License: Apache-2.0
+Description: Always know what to expect from your data. (See https://github.com/great-expectations/great_expectations for full description).
+Keywords: data science testing pipeline data quality dataquality validation datavalidation
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Other Audience
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Testing
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: arrow
+Provides-Extra: athena
+Provides-Extra: azure
+Provides-Extra: bigquery
+Provides-Extra: dremio
+Provides-Extra: excel
+Provides-Extra: hive
+Provides-Extra: mssql
+Provides-Extra: mysql
+Provides-Extra: pagerduty
+Provides-Extra: postgresql
+Provides-Extra: redshift
+Provides-Extra: snowflake
+Provides-Extra: spark
+Provides-Extra: teradata
+Provides-Extra: trino
+Provides-Extra: sqlalchemy
+Provides-Extra: test
+Provides-Extra: aws_secrets
+Provides-Extra: azure_secrets
+Provides-Extra: gcp
+Provides-Extra: s3

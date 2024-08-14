@@ -1,0 +1,25 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.10
+    commands:
+      - echo Installing dependencies
+      - pip install --upgrade pip
+      - pip install wheel twine  # Ensure wheel and twine packages are installed
+      - pip install -r requirements-dev.txt
+  build:
+    commands:
+      - echo Starting build process
+      - python setup.py sdist bdist_wheel
+  post_build:
+    commands:
+      - aws s3 cp dist/ s3://vivek-gx-buck/great_expectations_custom/ --recursive
+      - aws codeartifact login --tool twine --repository gxrep --domain gx --domain-owner 905418203341
+      - twine upload --repository codeartifact dist/*
+artifacts:
+  files:
+    - '**/*'
+
+    
